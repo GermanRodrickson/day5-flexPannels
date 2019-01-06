@@ -6,12 +6,50 @@ body {
 .wrapper {
   display: flex;
   div {
+    transition: .3s;
     position: relative;
     width: 100%;
     height: 100vh;
     p {
+      position: absolute;
+      top: 50%;
+      right: 50%;
+    }
+    span {
       text-align: center;
     }
+  }
+}
+
+.experience {
+  position: absolute;
+  top: -20px;
+  right: 50%;
+  margin-right: -40px;
+  transition: .3s;
+}
+
+.today {
+  position: absolute;
+  bottom: -20px;
+  right: 50%;
+  margin-right: -30px;
+  transition: .3s;
+}
+
+.panel3:hover{
+  padding: 0px 50px;
+
+  p {
+    transform: scale(1.2)
+  }
+
+  .today {
+    bottom: 20px;
+  }
+
+  .experience {
+    top: 20px;
   }
 }
 
